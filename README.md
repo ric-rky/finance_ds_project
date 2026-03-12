@@ -11,11 +11,11 @@ The notebook covers **499 trading days** (2022-01-04 to 2023-12-01) and implemen
 | EDA | Price trends, distributions, correlation heatmap | Data understanding & feature selection |
 | Technical Indicators | Bollinger Bands, SMA(20), EMA(20) | Visual trend & volatility bands |
 | Classification | Feedforward NN (4 layers + BatchNorm + Dropout) | 52% test accuracy on direction prediction |
-| Time-Series | LSTM (2 layers, hidden=64) | MAE: $2.86, RMSE: $3.72 |
+| Time-Series | LSTM (2 layers, hidden=64, seq=20) | MAE: 2.86 USD, RMSE: 3.72 USD |
 | Anomaly Detection | Autoencoder (5→3→5 bottleneck) | 25 anomalies flagged (5% of days) |
 | Risk Analysis | Historical VaR, Parametric VaR, CVaR | VaR: 2.73%, CVaR: 3.91% (95% confidence) |
 | Explainability | SHAP (DeepExplainer), Permutation Importance | Low price & daily return most predictive |
-| Simulation | Monte Carlo (1,000 paths × 252 days) | Future price distribution & percentiles |
+| Simulation | Monte Carlo (500 paths × 60 days) | Future price distribution & percentiles |
 
 ## Project Structure
 
